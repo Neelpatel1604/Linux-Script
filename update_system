@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# For updating and upgrade system packages
+sudo apt update && sudo apt upgrade -y
+
+echo "System updated successfully!"

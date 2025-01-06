@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# Differential Backup Script
+
+SOURCE_DIR="/path/to/source/directory"
+BACKUP_DIR="/path/to/backup/destination/differential"
+DATETIME=$(date "+%Y-%m-%d_%H-%M-%S")
+LATEST_LINK="$BACKUP_DIR/latest"
+BACKUP_PATH="$BACKUP_DIR/$DATETIME"
+
+# For creating backup directory
+mkdir -p "$BACKUP_PATH"
+
+# for performing differential backup
+rsync -av --delete \
+    "$SOURCE_DIR/" \
+    --compare-dest "$LATEST_LINK" \
+    "$BACKUP_PATH"
+
+# For updating latest link
+rm -f "$LATEST_LINK"
+ln -s "$BACKUP_PATH" "$LATEST_LINK"
+
+echo "Differential backup completed successfully!"
