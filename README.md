@@ -23,11 +23,11 @@ cd linux-scripts
 ```bash
 chmod +x *.sh
 ```
-##Run a script:
+## Run a script:
 ```bash
 ./script_name.sh
 ```
-###Script Details
+### Script Details
 ```bash
 incremental_backup.sh
 ```
