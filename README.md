@@ -15,11 +15,11 @@ Clone the repository:
 ```bash
 git clone https://github.com/yourusername/linux-scripts.git
 ```
-##Navigate to the script directory:
+## Navigate to the script directory:
 ```bash
 cd linux-scripts
 ```
-##Make the scripts executable:
+## Make the scripts executable:
 ```bash
 chmod +x *.sh
 ```
@@ -45,11 +45,11 @@ check_memory_usage.sh
 ```
 This script displays current memory usage statistics, including total memory, used memory, and usage percentage.
 
-##Customization
+## Customization
 Before using the backup scripts, make sure to set the SOURCE_DIR and BACKUP_DIR variables in both incremental_backup.sh and differential_backup.sh to match your desired source and destination directories.
 
-##Contributing
+## Contributing
 Contributions are welcome! If you have a useful script to add or improvements to existing ones, please feel free to submit a pull request, I would love to collaborate.
 
-##License
+## License
 This project is licensed under the MIT License - see the LICENSE file for details.
