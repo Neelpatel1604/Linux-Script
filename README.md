@@ -13,7 +13,7 @@ This repository contains a collection of useful shell scripts for automating var
 
 Clone the repository:
 ```bash
-git clone https://github.com/yourusername/linux-scripts.git
+git clone https://github.com/Neelpatel1604/Linux-Script.git
 ```
 ## Navigate to the script directory:
 ```bash
